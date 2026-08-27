@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --primary-color: #8b6b4c;
     --secondary-color: #c19a6b;
@@ -1453,11 +1457,32 @@ section {
     .container {
         width: min(94%, 560px);
         padding: 0;
+        max-width: 100%;
     }
 
     .main-container {
         width: 100%;
+        max-width: 100%;
         border-radius: 14px;
+    }
+
+    .main-container .image,
+    .main-container .content,
+    .contact-content,
+    .contact-info,
+    .info-item,
+    .info-item > div {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .info-item a,
+    .exp-desc,
+    .service-item p,
+    .content p,
+    .about-text p {
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .content p,
