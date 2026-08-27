@@ -72,6 +72,9 @@
                             <a href="mailto:shimaa44r2@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
                             <a href="tel:+201044536306" aria-label="رقم الهاتف"><i class="fa-solid fa-phone"></i></a>
                             <a href="https://wa.me/201044536306" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/shimaa44-r2" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/shyma.rmdan.692944" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/shimaa-ramadan-039880385" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                         <!-- زر تحميل السيرة الذاتية -->
                         <a href="Shaimaa-Ramadan-CV.pdf" download class="cv-btn"
@@ -368,6 +371,30 @@
                                 <p>الشرقية، مصر</p>
                             </div>
                         </div>
+                        <div class="info-item" data-aos="fade-right"
+                            data-aos-delay="250">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/shimaa44-r2" target="_blank" rel="noopener noreferrer">زيارة الملف الشخصي</a>
+                            </div>
+                        </div>
+                        <div class="info-item" data-aos="fade-right"
+                            data-aos-delay="300">
+                            <i class="fab fa-facebook"></i>
+                            <div>
+                                <h3>فيسبوك</h3>
+                                <a href="https://www.facebook.com/shyma.rmdan.692944" target="_blank" rel="noopener noreferrer">زيارة الملف الشخصي</a>
+                            </div>
+                        </div>
+                        <div class="info-item" data-aos="fade-right"
+                            data-aos-delay="350">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/shimaa-ramadan-039880385" target="_blank" rel="noopener noreferrer">زيارة الملف الشخصي</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="contact-form" data-aos="fade-left"
                         data-aos-delay="300">
@@ -401,6 +428,9 @@
                     <a href="https://wa.me/201044536306" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
                     <a href="mailto:shimaa44r2@gmail.com" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
                     <a href="tel:+201044536306" aria-label="الاتصال الهاتفي"><i class="fas fa-phone"></i></a>
+                    <a href="https://github.com/shimaa44-r2" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/shyma.rmdan.692944" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shimaa-ramadan-039880385" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <p>&copy; 2026 شيماء رمضان السيد - طالبة تمريض. جميع الحقوق محفوظة.</p>
             </div>
@@ -414,11 +444,12 @@
 
             document.querySelector('.contact-form form').addEventListener('submit', function(e) {
                 e.preventDefault();
-                emailjs.sendForm('service_q0hnx2h', 'template_n1nq2jh', this)
+                emailjs.sendForm('service_1oet85h', 'template_n1nq2jh', this)
                     .then(function() {
                         alert('تم إرسال الرسالة بنجاح!');
                     }, function(error) {
-                        alert('حدث خطأ أثناء إرسال الرسالة.');
+                        console.error('EmailJS error:', error);
+                        alert(`حدث خطأ أثناء إرسال الرسالة: ${error.text || 'تحقق من إعدادات EmailJS.'}`);
                     });
             });
         </script>
