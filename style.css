@@ -611,6 +611,20 @@ button.btn:hover, .contact-form button:hover {
     font-size: 1.1rem;
 }
 
+.info-item h3 a {
+    color: var(--primary-color);
+    font-size: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.info-item h3 a:hover,
+.info-item h3 a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .info-item p {
     font-size: 0.9rem;
 }
